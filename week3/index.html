@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>시맨틱 레이아웃 & 문의하기 페이지</title>
+<meta name="description" content="시맨틱 태그와 문의하기 폼을 포함한 웹 페이지입니다.">
+<meta property="og:title" content="시맨틱 레이아웃 & 문의하기">
+<meta property="og:description" content="시맨틱 태그 구조화 및 문의하기 폼 실습 예제입니다.">
+<meta property="og:url" content="https://github.io/web-practice-2026/week3/">
+</head>
+<body>
+
+<header>
+<h1>홍동환의 포트폴리오</h1>
+</header>
+
+<main>
+<section id="profile">
+<h2>프로필</h2>
+
+<img src="https://t1.daumcdn.net/cfile/tistory/990F2A3359ED554224?original" alt="가나다 이미지">
+</section>
+
+<section id="contact">
+<h2>문의하기</h2>
+<form action="#" method="post">
+
+    <div>
+<label for="name">이름:</label>
+<input type="text" id="name" name="name" required>
+</div>
+
+<div>
+<label for="email">이메일:</label>
+<input type="email" id="email" name="email" required>
+</div>
+
+<div>
+<label for="inquiry-type">문의유형:</label>
+<select id="inquiry-type" name="inquiry-type">
+<option value="general">일반 문의</option>
+<option value="technical">기술 지원</option>
+<option value="business">제휴 문의</option>
+</select>
+</div>
+
+<div>
+<label for="message">문의내용:</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+</div>
+
+<div>
+<button type="submit">보내기</button>
+</div>
+</form>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 Hong dong-hwan. All rights reserved.</p>
+<p>문의 이메일: contact@example.com</p>
+</footer>
+
+</body>
+</html>
